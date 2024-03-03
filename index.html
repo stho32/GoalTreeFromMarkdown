@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markdown Tree Visualizer</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  #tree {
+    min-height: 400px;
+  }
+</style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <textarea class="form-control" id="markdown-input" rows="15"></textarea>
+      <button class="btn btn-primary mt-3" id="draw-tree">Draw as tree</button>
+    </div>
+    <div class="col-md-6">
+      <div id="tree"></div>
+    </div>
+  </div>
+</div>
+
+<!-- JQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your JavaScript file -->
+<script src="markdown-to-tree.js"></script>
+</body>
+</html>
